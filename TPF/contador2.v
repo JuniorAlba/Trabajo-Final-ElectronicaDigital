@@ -1,4 +1,4 @@
-module contador2(
+module contador(
     input wire clk,
     input wire reset,
     input wire z1,

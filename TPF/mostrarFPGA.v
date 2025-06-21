@@ -9,20 +9,17 @@ module mostrarFPGA(
     output wire LED3
 );
 
-divisor_1khz divisor(
-    .clk_12mhz(CLK),
-    .clk_1khz(CLK_slow)
+wire BTN2_clean;
+wire BTN1_clean;
+antirrebote_modulo rebote1(
+    .clk(CLK),
+    .btn(~BTN1),
+    .btn_clean(BTN1_clean)
 );
-
-antirrebote rebote(
-    .clk_slow(CLK_slow),
-    .btn_in(~BTN1),
-    .btn_stable(BTN1_clean)
-);
-antirrebote rebote1(
-    .clk_slow(CLK_slow),
-    .btn_in(~BTN4),
-    .btn_stable(BTN2_clean)
+antirrebote_modulo rebote2(
+    .clk(CLK),
+    .btn(~BTN4),
+    .btn_clean(BTN2_clean)
 );
 reg A = 0, B = 0;
 
@@ -38,7 +35,7 @@ entrada_salida gestion(
 
 wire [2:0] num;
 wire lleno;
-contador2 cuenta(
+contador cuenta(
     .clk(CLK),
     .reset(RST),
     .z1(salida[0]),

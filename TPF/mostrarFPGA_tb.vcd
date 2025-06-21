@@ -1,0 +1,729 @@
+$date
+	Sat Jun 21 16:58:37 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mostrarFPGA_tb $end
+$var wire 4 ! leds [3:0] $end
+$var parameter 32 " DURATION $end
+$var reg 1 # BTN1 $end
+$var reg 1 $ BTN4 $end
+$var reg 1 % clk $end
+$var reg 1 & reset $end
+$scope module uut $end
+$var wire 1 # BTN1 $end
+$var wire 1 $ BTN4 $end
+$var wire 1 % CLK $end
+$var wire 1 ' LED3 $end
+$var wire 1 & RST $end
+$var wire 2 ( salida [1:0] $end
+$var wire 3 ) num [2:0] $end
+$var wire 1 * lleno $end
+$var wire 3 + estado [2:0] $end
+$var wire 1 , LED2 $end
+$var wire 1 - LED1 $end
+$var wire 1 . LED0 $end
+$var wire 1 / CLK_slow $end
+$var wire 1 0 BTN2_clean $end
+$var wire 1 1 BTN1_clean $end
+$var reg 1 2 A $end
+$var reg 1 3 B $end
+$scope module cuenta $end
+$var wire 1 % clk $end
+$var wire 1 & reset $end
+$var wire 1 4 z1 $end
+$var wire 1 5 z2 $end
+$var parameter 3 6 S0 $end
+$var parameter 3 7 S1 $end
+$var parameter 3 8 S2 $end
+$var parameter 3 9 S3 $end
+$var parameter 3 : S4 $end
+$var parameter 3 ; S5 $end
+$var parameter 3 < S6 $end
+$var parameter 3 = S7 $end
+$var reg 3 > c [2:0] $end
+$var reg 1 * lleno $end
+$var reg 3 ? nextstate [2:0] $end
+$var reg 3 @ state [2:0] $end
+$upscope $end
+$scope module divisor $end
+$var wire 1 % clk_12mhz $end
+$var reg 1 / clk_1khz $end
+$var reg 14 A contador [13:0] $end
+$upscope $end
+$scope module gestion $end
+$var wire 1 B D0 $end
+$var wire 1 C D1 $end
+$var wire 1 D D2 $end
+$var wire 1 % clk $end
+$var wire 2 E salida [1:0] $end
+$var wire 3 F estado [2:0] $end
+$var wire 1 G Q2 $end
+$var wire 1 H Q1 $end
+$var wire 1 I Q0 $end
+$var wire 1 0 B $end
+$var wire 1 1 A $end
+$scope module flipflipD0 $end
+$var wire 1 % Clk $end
+$var wire 1 B D $end
+$var reg 1 J Q $end
+$upscope $end
+$scope module flipflipD1 $end
+$var wire 1 % Clk $end
+$var wire 1 C D $end
+$var reg 1 K Q $end
+$upscope $end
+$scope module flipflipD2 $end
+$var wire 1 % Clk $end
+$var wire 1 D D $end
+$var reg 1 L Q $end
+$upscope $end
+$upscope $end
+$scope module rebote $end
+$var wire 1 M btn_in $end
+$var wire 1 1 btn_stable $end
+$var wire 1 / clk_slow $end
+$var reg 1 N q1 $end
+$var reg 1 O q2 $end
+$upscope $end
+$scope module rebote1 $end
+$var wire 1 P btn_in $end
+$var wire 1 0 btn_stable $end
+$var wire 1 / clk_slow $end
+$var reg 1 Q q1 $end
+$var reg 1 R q2 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b111 =
+b110 <
+b101 ;
+b100 :
+b11 9
+b10 8
+b1 7
+b0 6
+b1010 "
+$end
+#0
+$dumpvars
+xR
+xQ
+1P
+xO
+xN
+1M
+0L
+0K
+0J
+0I
+0H
+0G
+b0 F
+b0 E
+0D
+xC
+xB
+b0 A
+b0 @
+b0 ?
+b0 >
+05
+04
+03
+02
+x1
+x0
+x/
+0.
+0-
+0,
+b0 +
+0*
+b0 )
+b0 (
+0'
+1&
+0%
+0$
+0#
+b0 !
+$end
+#500000
+xD
+xI
+xH
+b1 A
+xJ
+b0xx +
+b0xx F
+xK
+1%
+#1000000
+0%
+#1500000
+x5
+x4
+bx (
+bx E
+xG
+bx +
+bx F
+xL
+b10 A
+1%
+#2000000
+0%
+0&
+#2500000
+b11 A
+1%
+#3000000
+0%
+#3500000
+b100 A
+0M
+1%
+1#
+#4000000
+0%
+#4500000
+b101 A
+1%
+#5000000
+0P
+0%
+1$
+#5500000
+b110 A
+1%
+#6000000
+0%
+#6500000
+b111 A
+1M
+1%
+0#
+#7000000
+0%
+#7500000
+b1000 A
+1%
+#8000000
+1P
+0%
+0$
+#8500000
+b1001 A
+1%
+#9000000
+0%
+#9500000
+b1010 A
+0M
+1%
+1#
+#10000000
+0%
+#10500000
+b1011 A
+1%
+#11000000
+0P
+0%
+1$
+#11500000
+b1100 A
+1%
+#12000000
+0%
+#12500000
+b1101 A
+1M
+1%
+0#
+#13000000
+0%
+#13500000
+b1110 A
+1%
+#14000000
+1P
+0%
+0$
+#14500000
+b1111 A
+1%
+#15000000
+0%
+#15500000
+b10000 A
+0M
+1%
+1#
+#16000000
+0%
+#16500000
+b10001 A
+1%
+#17000000
+0P
+0%
+1$
+#17500000
+b10010 A
+1%
+#18000000
+0%
+#18500000
+b10011 A
+1M
+1%
+0#
+#19000000
+0%
+#19500000
+b10100 A
+1%
+#20000000
+1P
+0%
+0$
+#20500000
+b10101 A
+1%
+#21000000
+0%
+#21500000
+b10110 A
+0M
+1%
+1#
+#22000000
+0%
+#22500000
+b10111 A
+1%
+#23000000
+0P
+0%
+1$
+#23500000
+b11000 A
+1%
+#24000000
+0%
+#24500000
+b11001 A
+1M
+1%
+0#
+#25000000
+0%
+#25500000
+b11010 A
+1%
+#26000000
+1P
+0%
+0$
+#26500000
+b11011 A
+1%
+#27000000
+0%
+#27500000
+b11100 A
+0M
+1%
+1#
+#28000000
+0%
+#28500000
+b11101 A
+1%
+#29000000
+0P
+0%
+1$
+#29500000
+b11110 A
+1%
+#30000000
+0%
+#30500000
+b11111 A
+1M
+1%
+0#
+#31000000
+0%
+#31500000
+b100000 A
+1%
+#32000000
+1P
+0%
+0$
+#32500000
+b100001 A
+1%
+#33000000
+0%
+#33500000
+b100010 A
+0M
+1%
+1#
+#34000000
+0%
+#34500000
+b100011 A
+1%
+#35000000
+0P
+0%
+1$
+#35500000
+b100100 A
+1%
+#36000000
+0%
+#36500000
+b100101 A
+1M
+1%
+0#
+#37000000
+0%
+#37500000
+b100110 A
+1%
+#38000000
+1P
+0%
+0$
+#38500000
+b100111 A
+1%
+#39000000
+0%
+#39500000
+b101000 A
+0M
+1%
+1#
+#40000000
+0%
+#40500000
+b101001 A
+1%
+#41000000
+0P
+0%
+1$
+#41500000
+b101010 A
+1%
+#42000000
+0%
+#42500000
+b101011 A
+1M
+1%
+0#
+#43000000
+0%
+#43500000
+b101100 A
+1%
+#44000000
+1P
+0%
+0$
+#44500000
+b101101 A
+1%
+#45000000
+0%
+#45500000
+b101110 A
+0P
+1%
+1$
+#46000000
+0%
+#46500000
+b101111 A
+1%
+#47000000
+0M
+0%
+1#
+#47500000
+b110000 A
+1%
+#48000000
+0%
+#48500000
+b110001 A
+1P
+1%
+0$
+#49000000
+0%
+#49500000
+b110010 A
+1%
+#50000000
+1M
+0%
+0#
+#50500000
+b110011 A
+1%
+#51000000
+0%
+#51500000
+b110100 A
+0P
+1%
+1$
+#52000000
+0%
+#52500000
+b110101 A
+1%
+#53000000
+0M
+0%
+1#
+#53500000
+b110110 A
+1%
+#54000000
+0%
+#54500000
+b110111 A
+1P
+1%
+0$
+#55000000
+0%
+#55500000
+b111000 A
+1%
+#56000000
+1M
+0%
+0#
+#56500000
+b111001 A
+1%
+#57000000
+0%
+#57500000
+b111010 A
+0P
+1%
+1$
+#58000000
+0%
+#58500000
+b111011 A
+1%
+#59000000
+0M
+0%
+1#
+#59500000
+b111100 A
+1%
+#60000000
+0%
+#60500000
+b111101 A
+1P
+1%
+0$
+#61000000
+0%
+#61500000
+b111110 A
+1%
+#62000000
+1M
+0%
+0#
+#62500000
+b111111 A
+1%
+#63000000
+0%
+#63500000
+b1000000 A
+0P
+1%
+1$
+#64000000
+0%
+#64500000
+b1000001 A
+1%
+#65000000
+0M
+0%
+1#
+#65500000
+b1000010 A
+1%
+#66000000
+0%
+#66500000
+b1000011 A
+1P
+1%
+0$
+#67000000
+0%
+#67500000
+b1000100 A
+1%
+#68000000
+1M
+0%
+0#
+#68500000
+b1000101 A
+1%
+#69000000
+0%
+#69500000
+b1000110 A
+0P
+1%
+1$
+#70000000
+0%
+#70500000
+b1000111 A
+1%
+#71000000
+0M
+0%
+1#
+#71500000
+b1001000 A
+1%
+#72000000
+0%
+#72500000
+b1001001 A
+1P
+1%
+0$
+#73000000
+0%
+#73500000
+b1001010 A
+1%
+#74000000
+1M
+0%
+0#
+#74500000
+b1001011 A
+1%
+#75000000
+0%
+#75500000
+b1001100 A
+0P
+1%
+1$
+#76000000
+0%
+#76500000
+b1001101 A
+1%
+#77000000
+0M
+0%
+1#
+#77500000
+b1001110 A
+1%
+#78000000
+0%
+#78500000
+b1001111 A
+1P
+1%
+0$
+#79000000
+0%
+#79500000
+b1010000 A
+1%
+#80000000
+1M
+0%
+0#
+#80500000
+b1010001 A
+1%
+#81000000
+0%
+#81500000
+b1010010 A
+0P
+1%
+1$
+#82000000
+0%
+#82500000
+b1010011 A
+1%
+#83000000
+0M
+0%
+1#
+#83500000
+b1010100 A
+1%
+#84000000
+0%
+#84500000
+b1010101 A
+1P
+1%
+0$
+#85000000
+0%
+#85500000
+b1010110 A
+1%
+#86000000
+1M
+0%
+0#
+#86500000
+b1010111 A
+1%
+#87000000
+0%
+#87500000
+b1011000 A
+1%
+#88000000
+0%
+#88500000
+b1011001 A
+1%
