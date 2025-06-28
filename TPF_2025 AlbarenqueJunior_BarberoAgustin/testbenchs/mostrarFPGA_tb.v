@@ -4,13 +4,14 @@
 
 module mostrarFPGA_tb;
     parameter DURATION = 10;
-
+    //No funciona el testbench debido a que lo hicimos antes de crear el modulo antirrebote_modulo
+    //no esta pensado para usarse junto con el module antirrebote_modulo
     reg clk = 0;
     reg reset = 0;
     reg BTN1 = 0;
     reg BTN4 = 0;
     wire [3:0] leds;
-    
+
 
     // Instanciamos el módulo top
     mostrarFPGA uut (
